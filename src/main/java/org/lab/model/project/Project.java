@@ -96,6 +96,14 @@ public class Project {
         System.out.println(result);
     }
 
+    public void addMilestone(Milestone milestone) {
+        this.milestones.add(milestone);
+    }
+
+    public void addBug(Bug bug) {
+        this.bugs.addLast(bug);
+    }
+
     public boolean isManager(Manager manager) {
         return this.manager == manager;
     }
